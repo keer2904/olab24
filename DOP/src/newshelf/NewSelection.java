@@ -1,7 +1,6 @@
 package newshelf;
 public class NewSelection 
 {
-
 	// TODO: Complete this method 
 	/**
 	 * 
