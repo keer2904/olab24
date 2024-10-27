@@ -1,15 +1,16 @@
 package oldshelf;
-
-public class Fiction extends Book {
-
-	/* TODO: Add most strict modifiers here*/ String name;
+public class Fiction extends Book 
+{
+	/* TODO: Add most strict modifiers here*/ 
+	private final String name;
+	private static FictionType type;
 	// TODO: change 
 	/**
 	 * type is  a per instance object and it is initialized only once.
 	 * 
 	 */
-	private static FictionType type;
-	public Fiction(String title) {
+	public Fiction(String title) 
+	{
 		super(title);
 		// TODO  correct the above.
 	}
