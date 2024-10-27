@@ -18,4 +18,8 @@ public abstract class Book
 	{
 		return author;
 	}
+	public String getSubject() 
+	{
+        	return subject;
+    	}
 }
