@@ -11,8 +11,17 @@ public class Fiction extends Book
 	 */
 	public Fiction(String title) 
 	{
-		super(title);
+		super(title,author);
+		this.type=type;
 		// TODO  correct the above.
 	}
-
+	public FictionType getType() 
+	{
+        	return type;
+    	}
+    	@Override
+    	public String toString() 
+	{
+        	return "Fiction{" + "title= " + getTitle() + ", author= " + getAuthor() + ", type= " + type + "}";
+    	}
 }
