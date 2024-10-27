@@ -1,5 +1,6 @@
 package newshelf;
-
-public interface IBook {
-
+public interface IBook 
+{
+    String  getTitle();
+    String getAuthor();
 }
