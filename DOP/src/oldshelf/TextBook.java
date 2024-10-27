@@ -13,13 +13,13 @@ public class TextBook extends Book
 	// TODO: Create a setter if required
 	
 	// TODO: write a toString method
+    	public String getSubject() 
+	{
+        	return subject;
+    	}
 	@Override
     	public String toString() 
 	{
         	return "TextBook{" + "subject='" + subject + "'}";
    	}
-    	public String getSubject() 
-	{
-        	return subject;
-    	}
 }
