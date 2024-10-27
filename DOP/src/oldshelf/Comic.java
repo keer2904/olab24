@@ -21,7 +21,7 @@ public class Comic extends Book
 	@Override
 	public String toString() 
 	{
-		return "Comic{" + "title=" + title + ", ageOfMainCharacter=" + ageOfMainCharacter + "}";
+		return "Comic{" + "title= " + title + ", ageOfMainCharacter= " + ageOfMainCharacter + "}";
         }
 	// TODO: Bonus: 
 	@Override
