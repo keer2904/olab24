@@ -1,6 +1,6 @@
 package newgenerictypes;
 
-public record GenericComic<T extends Comparable<T>>(T title, int ageOfMainCharacter) implements IGenericBook<T> 
+public record GenericComic<T extends Comparable<T>>(T title, int age) implements IGenericBook<T> 
 {
     @Override
     public T getTitleOrSubject() 
@@ -9,9 +9,9 @@ public record GenericComic<T extends Comparable<T>>(T title, int ageOfMainCharac
     }
 
     @Override
-    public int compareTo(IGenericBook<T> other) 
+    public int compareTo(IGenericBook<T> obj) 
     {
-        if (other instanceof GenericComic<T> otherComic) 
+        if (obj instanceof GenericComic<T> otherComic) 
         {
             return this.title.compareTo(otherComic.title);
         }
