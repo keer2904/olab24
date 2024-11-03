@@ -1,6 +1,6 @@
 package newgenerictypes;
 
-public record GenericFiction<T extends Comparable<T>>(T title, FictionType type) implements IGenericBook<T> 
+public record GenericFiction<T extends Comparable<T>>(T title, FictionType fictype) implements IGenericBook<T> 
 {
     @Override
     public T getTitleOrSubject() 
