@@ -13,7 +13,7 @@ public class OldSelectionTest
 {
 
     @Test
-    public void testGetAgeOrTitleWithComic() 
+    public void test_get_age_or_title_with_comic() 
     {
         Comic comic = new Comic("Superhero", 25);
         String result = OldSelection.getAgeOrTitle(comic);
@@ -21,7 +21,7 @@ public class OldSelectionTest
     }
 
     @Test
-    public void testGetAgeOrTitleWithFiction() 
+    public void test_get_age_or_title_with_fiction() 
     {
         Fiction fiction = new Fiction("Minds", FictionType.Tragedy);
         String result = OldSelection.getAgeOrTitle(fiction);
@@ -29,7 +29,7 @@ public class OldSelectionTest
     }
 
     @Test
-    public void testGetAgeOrTitleWithTextBook() 
+    public void test_get_age_or_title_with_textBook() 
     {
         TextBook textbook = new TextBook("Maths");
         String result = OldSelection.getAgeOrTitle(textbook);
@@ -37,7 +37,7 @@ public class OldSelectionTest
     }
 
     @Test
-    public void testGetAgeOrTitleWithInvalidObject() 
+    public void test_get_age_or_title_with_invalidobj() 
     {
         String result = OldSelection.getAgeOrTitle("NotABook");
         assertEquals("", result, "Expected empty string for NotABook instance");
